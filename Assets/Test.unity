@@ -280,7 +280,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 412194, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.5895333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 412194, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -305,34 +305,6 @@ Prefab:
     - target: {fileID: 412194, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11470910, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
-      propertyPath: triggerMask.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 11470910, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
-      propertyPath: oneWayPlatformMask.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 127536, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11470910, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
-      propertyPath: slopeLimit
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 11470910, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
-      propertyPath: totalHorizontalRays
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11470910, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
-      propertyPath: totalVerticalRays
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11455760, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
-      propertyPath: runSpeed
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f775e8f1c4a83454d872e715facd04a6, type: 2}
