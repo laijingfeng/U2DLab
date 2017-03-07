@@ -55,7 +55,6 @@ namespace Prime31
         public event Action<Collider2D> onTriggerStayEvent;
         public event Action<Collider2D> onTriggerExitEvent;
 
-
         /// <summary>
         /// when true, one way platforms will be ignored when moving vertically for a single frame
         /// </summary>
@@ -199,25 +198,28 @@ namespace Prime31
             }
         }
 
-
         public void OnTriggerEnter2D(Collider2D col)
         {
             if (onTriggerEnterEvent != null)
+            {
                 onTriggerEnterEvent(col);
+            }
         }
-
 
         public void OnTriggerStay2D(Collider2D col)
         {
             if (onTriggerStayEvent != null)
+            {
                 onTriggerStayEvent(col);
+            }
         }
-
 
         public void OnTriggerExit2D(Collider2D col)
         {
             if (onTriggerExitEvent != null)
+            {
                 onTriggerExitEvent(col);
+            }
         }
 
         #endregion
