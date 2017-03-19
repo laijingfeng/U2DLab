@@ -119,7 +119,6 @@ public class PlayerController : MonoBehaviour
         {
             _velocity.y = Mathf.Sqrt(2f * jumpHeight * -gravity);
             _animator.Play(Animator.StringToHash("Jump"));
-
             JerryEventMgr.DispatchEvent(Enum_Event.PlayAudio.ToString(), new object[] { Enum_Audio.Jump });
         }
 
@@ -136,6 +135,7 @@ public class PlayerController : MonoBehaviour
         {
             _velocity.y *= 3f;
             _controller.ignoreOneWayPlatformsThisFrame = true;
+            //JerryEventMgr.DispatchEvent(Enum_Event.PlayAudio.ToString(), new object[] { Enum_Audio.Drop });
         }
 
         _controller.move(_velocity * Time.deltaTime);

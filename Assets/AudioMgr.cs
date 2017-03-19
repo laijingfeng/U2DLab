@@ -4,7 +4,8 @@ using Jerry;
 public class AudioMgr : SingletonMono<AudioMgr>
 {
     private AudioSource m_AudioSource;
-    public AudioClip m_Jump; 
+    public AudioClip m_Jump;
+    public AudioClip m_Drop;
 
     public override void Awake()
     {
@@ -28,6 +29,11 @@ public class AudioMgr : SingletonMono<AudioMgr>
                     m_AudioSource.PlayOneShot(m_Jump);
                 }
                 break;
+            case Enum_Audio.Drop:
+                {
+                    m_AudioSource.PlayOneShot(m_Drop);
+                }
+                break;
         }
     }
 
@@ -47,4 +53,5 @@ public enum Enum_Audio
 {
     None = 0,
     Jump,
+    Drop,
 }
